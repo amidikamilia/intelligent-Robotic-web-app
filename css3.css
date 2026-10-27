@@ -1,0 +1,128 @@
+
+* {
+    font-family: "Figtree", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    padding: 0px;
+    margin: 0px;
+  }
+  body{
+   background-image:linear-gradient(to right, #01072afb 15% ,#020709f0 85%);
+  
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+  }
+  a{
+    color: white;
+    text-decoration: none;
+   
+  }
+  .continer{
+    background-image: linear-gradient(to right, #01072ab8 30% ,#02070961 70%),url(images/EME251_STEMClass1.jpg);
+   width: 90%;
+   height:680px;
+    background-size: cover;
+  }
+  header{
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 10px;
+
+
+  }
+.logo{
+    font-style: italic;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+ul{
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+
+}
+ul a:hover{
+font-size: 18px;
+text-decoration: underline;
+
+}
+.content{
+    width: 60%;
+    padding-top: 140px;
+color : white;
+padding-left: 40px;
+
+
+}
+.content h3{
+    font-size: 28px;
+   padding-bottom: 30px;
+}
+.content p{
+     font-size: 20px;
+padding: 15px 0px 15px 0px;
+}
+/*.home-buttons {
+background-color: aqua;
+    justify-content: space-between;
+    display :block;
+    padding: 70px 100px ;
+    margin: 0 12px 12px 0;
+  width: 90%px;
+  height: 120px;}
+ 
+.btn{
+  background-color: black;
+
+    /*background-color: #087fbd;
+    color: #ffffff;
+
+    border: 2px solid #087fbd;
+    border-radius: 8px;
+
+    font-size: 15px;
+    font-weight: 600;
+
+    cursor: pointer;
+    transition: all 0.3s ease;
+}*/
+/* Buttons container */
+.home-buttons {
+    display: flex;
+    gap: 20px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+  margin: 15px 200px;
+}
+
+/* Common button styles */
+.btn {
+    display: inline-block;
+    padding: 14px 28px;
+    border-radius: 8px;
+    border: 2px solid #071e509d;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    background-color: rgb(5, 3, 63);
+   
+}
+
+.btn:hover {
+    background-color: #3a4d82;
+    border-color: #1d4ed8;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(37, 99, 235, 0.25);
+}
+
+.btn:focus-visible {
+    outline: 3px solid #348ed2c6;
+    outline-offset: 4px;
+}
