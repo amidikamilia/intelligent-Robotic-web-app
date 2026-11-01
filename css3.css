@@ -10,10 +10,10 @@
   body{
    background-image:linear-gradient(to right, #01072afb 15% ,#020709f0 85%);
   
-   height: 100vh;
+   min-height: 100vh;          /* min-height instead of height */
    display: flex;
-   justify-content: center;
-   align-items: center;
+   flex-direction: column;     /* stack the children vertically */
+   align-items: center; 
   }
   a{
     color: white;
@@ -25,12 +25,14 @@
    width: 90%;
    height:680px;
     background-size: cover;
+   float:none ;
+   margin-top: 2%;
   }
   header{
-display: flex;
-justify-content: space-between;
-align-items: center;
-padding: 10px;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ padding: 10px;
 
 
   }
@@ -39,7 +41,7 @@ padding: 10px;
     font-size: 30px;
     text-transform: uppercase;
 }
-ul{
+.continer ul{
     width: 50%;
     display: flex;
     justify-content: space-evenly;
@@ -125,4 +127,113 @@ background-color: aqua;
 .btn:focus-visible {
     outline: 3px solid #348ed2c6;
     outline-offset: 4px;
+}
+.about-section{
+  clear : both;
+  width: 90%;
+  height: 350px;
+  color : white;
+
+  position: relative;
+}
+.about-section h3{
+  font-size: 28px;
+
+  padding: 50px 50px 30px 30px;
+}
+.about-section p{
+  font-size: 20px;
+  padding: 5px 0px 15px 20px;
+  width: 55%;
+  
+
+}
+
+.about-list{
+ /* background-color: #0a1928fb;*/
+  width: 20%;
+  height: 150px;
+position: absolute;
+right: 170px;
+top:50px;
+  padding-top: 30px;
+  box-shadow: 0 5px 10px rgba(79, 128, 234, 0.25) ;
+  border-radius: 8px;
+  display: inline-block;
+
+}
+.about-list ul{
+  list-style: none;
+  padding-left: 20px;
+  line-height: 30px;
+  font-size: 20px;
+}
+.courses-section{
+  display: flex;
+  flex-wrap: wrap;
+  gap:20px;
+  width: 90%;
+  height: 500px;
+  position: relative;
+  color:white
+}
+.courses-section div{
+  display: inline-block;
+  
+  top: 30px;
+  width: 23.5%;
+  height: 400px; 
+  border-radius: 10px;
+  box-shadow: #3a4d82 0px 5px 10px;
+/*background-color: aliceblue;*/
+
+
+}
+.courses-section h3{
+  display: block;
+  width: 100%;
+  top :5px ;
+bottom: 15px;
+  font-size: 28px;
+  padding: 5px 50px 30px 30px;
+}
+.course1{
+  background-image: linear-gradient(to right, #01072ab8 30% ,#02070961 70%),url(images/Arduino\ Sensor\ Projects\ for\ Beginners.jpg);
+   background-size: cover;
+   background-position: 5px ;
+   background-repeat: no-repeat;
+}
+.course2{
+  background-image: linear-gradient(to right, #01072ab8 30% ,#02070961 70%),url(images/OIP.webp);
+   background-size: cover;
+   background-position: 75% center;
+
+   background-repeat: no-repeat;
+  
+}
+.course3{
+  background-image: linear-gradient(to right, #01072ab8 30% ,#02070961 70%),url(images/KLiC-SCRATCH-2023.jpg);
+   background-size: cover;
+  
+   background-repeat: no-repeat;
+  
+}
+.course4{
+  background-image: linear-gradient(to right, #01072ab8 30% ,#02070961 70%),url(images/OIP\ \(4\).webp);
+   background-size: cover;
+   background-position: 75% center;
+   background-repeat: no-repeat;
+  
+}
+.course-title{
+  font-size: 24px;
+  line-height: 1.2;
+
+}
+.age{
+
+  padding-left:200px ;
+  background-color: rgba(142, 183, 248, 0.647);
+  border-radius: 8px;
+
 }
