@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <title>Intelligent Robotic </title>
 </head>
 <body>
@@ -51,35 +52,174 @@
         </div>
         <div id="courses" class="courses-section">
             <h3>Our Courses</h3>
-          <div class="course1">
+          
+            <article class="course course1">
+              <div class="course-header">
+                <div class="course-text">
+                  <h4 class="course-title">arduino level 1</h4>
+                </div>
+                <div class="course-meta">
+                  <span class="age">Ages 12-16</span>
+                  <p class="price">12000 <small>dz</small></p>
+                </div>
+              </div>
+              <div class="cart-btn">
+                <a href="#register" id="course1" class="btn">Register</a>
+              </div>
+            </article>
+          
+            <article class="course course2">
+              <div class="course-header">
+                <div class="course-text">
+                  <h4 class="course-title">arduino level 2</h4>
+                </div>
+                <div class="course-meta">
+                  <span class="age">Ages 12-16</span>
+                  <p class="price">12000 <small>dz</small></p>
+                </div>
+              </div>
+              <div class="cart-btn">
+                <a href="#register" id="course2" class="btn">Register</a>
+              </div>
+            </article>
+          
+            <article class="course course3">
+              <div class="course-header">
+                <div class="course-text">
+                  <h4 class="course-title">programming</h4>
+                  <p>with scratch</p>
+                </div>
+                <div class="course-meta">
+                  <span class="age">Ages 12-16</span>
+                  <p class="price">12000 <small>dz</small></p>
+                </div>
+              </div>
+              <div class="cart-btn">
+                <a href="#register" id="course3" class="btn">Register</a>
+              </div>
+            </article>
+          
+            <article class="course course4">
+              <div class="course-header">
+                <div class="course-text">
+                  <h4 class="course-title">app programming</h4>
+                  <p>with appinventor</p>
+                </div>
+                <div class="course-meta">
+                  <span class="age">Ages 12-16</span>
+                  <p class="price">12000 <small>dz</small></p>
+                </div>
+              </div>
+              <div class="cart-btn">
+              <a href="#register" id="course4" class="btn">Register</a>
+            </div >
+            </article>
+            <section class="register-section" id="register">
+                <h3>Registration</h3>
+              <div class="register">
+                <form class="register-form">
+                  <input type="text" name="fullname" placeholder="Full name" required>
+                  <input type="number" name="age" placeholder="Age" min="12" max="16" required>
+                  <input type="email" name="email" placeholder="Email" required>
+                  <input type="tel" name="phone" placeholder="Phone" required>
+              
+                  <select name="course" required>
+                    <option value="" disabled selected>Choose a course</option>
+                    <option>Arduino level 1</option>
+                    <option>Arduino level 2</option>
+                    <option>Programming with Scratch</option>
+                    <option>App programming with App Inventor</option>
+                  </select>
+              
+                  <button type="submit" class="btn">Submit</button>
+                </form>
+               </div>
+              </section>
+              <section id="contact" class="contact-section">
+
+                <div class="contact-container">
             
-            <h4 class="course-title">arduino level 1</h4>
-            <span class="age">Ages 12-16</span>
-            <p>12000 <small>dz</small></p>
-            <a href="#register" id= "course1"class="btn">Register</a>
-          </div>
-          <div class="course2">
-            <h4 class="course-title">arduino level 2</h4> 
-            <span class="age">Ages 12-16</span>
-            <p>12000<small>dz</small></p> 
-            <a href="#register" id= "course2" class="btn">Register</a>
-          </div>
-          <div class="course3">
-            <h4 class="course-title">programming</h4>
-            <p>with scratch</p>
-            <span class="age">Ages 12-16</span>
-            <p>12000<small>dz</small></p>
-            <a href="#register" id= "course3" class="btn">Register</a>
-          </div>
-          <div class="course4">
-            <h4 class="course-title">app programming</h4>
-            <p>with appinventur</p>
-            <span class="age">Ages 12-16</span>
-            <p>12000<small>dz</small></p>
-            <a href="#register"id= "course4" class="btn">Register</a>
+                    <h2>Contact Intelligent Robotic</h2>
+            
+                    <p>
+                        Have questions about our robotics programs?<br>
+                        
+                    </p>
+                <P>Feel free to contact us.</P>
+                </div>
+                           
+                               
+                           
+                         
+                        <div class="contact-info">
+
+                            <h3>Get In Touch</h3>
+                        
+                            <address>
+                        
+                                <p>
+                                    Email:
+                                    <a href="mailto:contact@robotech-academy.example">
+                                        contact@robotech-academy.example
+                                    </a>
+                                </p>
+                        
+                                <p>
+                                    Phone:
+                                    <a href="tel:+213555123456">
+                                        +213 555 123 456
+                                    </a>
+                                </p>
+                        
+                                <p>Address: Algiers, Algeria</p>
+                        
+                                <p>Working Hours: Sunday - Thursday, 09:00 - 17:00</p>
+                           
+                            </address>
+                      
+                        
+                        </div>
+               
+            
+            </section>
+       
+            <footer class="footer">
+
+                <!-- Social Media -->
+                <div class="footer-social">
+            
+                    <span class="footer-line"></span>
+            
+                    <div class="social-icons">
+            
+                        <a href="#" aria-label="Facebook">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+            
+                        <a href="#" aria-label="Instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+            
+                        <a href="#" aria-label="TikTok">
+                            <i class="fa-brands fa-tiktok"></i>
+                        </a>
+            
+                    </div>
+            
+                    <span class="footer-line"></span>
+            
+                </div>
+            
+                <!-- Academy Name -->
+                <h3 class="footer-logo">Intelligent Robotic</h3>
+            
+                <!-- Copyright -->
+                <p class="copyright">
+                    Copyright &copy; 2026 Intelligent Robotic. All Rights Reserved.
+                </p>
+            
+            </footer>
 
           </div>
-
-        </div>
 </body>
 </html>

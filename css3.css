@@ -173,10 +173,11 @@ top:50px;
   flex-wrap: wrap;
   gap:20px;
   width: 90%;
-  height: 500px;
+  height: 600px;
   position: relative;
-  color:white
-}
+  color:white;
+ 
+}/*
 .courses-section div{
   display: inline-block;
   
@@ -185,14 +186,14 @@ top:50px;
   height: 400px; 
   border-radius: 10px;
   box-shadow: #3a4d82 0px 5px 10px;
-/*background-color: aliceblue;*/
+/*background-color: aliceblue;
 
 
-}
+}*/
 .courses-section h3{
   display: block;
   width: 100%;
-  top :5px ;
+  top:5px ;
 bottom: 15px;
   font-size: 28px;
   padding: 5px 50px 30px 30px;
@@ -202,6 +203,7 @@ bottom: 15px;
    background-size: cover;
    background-position: 5px ;
    background-repeat: no-repeat;
+
 }
 .course2{
   background-image: linear-gradient(to right, #01072ab8 30% ,#02070961 70%),url(images/OIP.webp);
@@ -225,15 +227,249 @@ bottom: 15px;
    background-repeat: no-repeat;
   
 }
+/*
 .course-title{
   font-size: 24px;
   line-height: 1.2;
 
 }
-.age{
+.course-header {
+position: relative;
 
-  padding-left:200px ;
-  background-color: rgba(142, 183, 248, 0.647);
-  border-radius: 8px;
+}
+.course-header span{
 
+
+ position:absolute;
+padding-left: 230px;
+
+}*/
+
+
+.courses-section article{
+  width: 23.5%;
+  height: 400px;
+  box-sizing: border-box;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: #3a4d82 0px 5px 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.course-header {
+
+  display: flex;
+  justify-content: space-between;   /* title left, meta right */
+  align-items: flex-start;
+  gap: 10px;
+}
+.course-header h4{
+  font-size: 22px;
+  line-height: 1.2;
+
+}
+.course-header p{
+  font-size: 18px;
+  line-height: 1.2;
+  margin-right: 5px;
+  }
+
+.course-meta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;            /* price lines up under the pill */
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.age {
+
+  background-color: #3a4d82c8;
+  border-radius: 999px;             /* the rounded pill from your sketch */
+  padding: 3px 12px;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.price {
+  background-color: #5974bdc8 ;
+  border-radius: 999px;
+  padding: 3px 10px;
+  font-size: 10px;
+  margin: 0;
+  font-size: 18px;
+}
+.cart-btn{
+  float: bottom;
+  margin: 200px 0px 50px 90px;
+ 
+}
+.register-section{
+  width: 90%;
+  height: 600px;
+  position: relative;
+  color:white;
+  padding: 50px 0px 0px 0px;
+
+
+}
+.register-section h3{
+  width: 100%;
+  top:5px ;
+bottom: 15px;
+  font-size: 28px;
+  padding: 5px 50px 30px 30px;
+  
+}
+.register{
+ padding-left:250px ;
+
+
+}
+.register-form{
+  width: 100%;
+  max-width: 700px;
+
+  box-sizing: border-box;
+  margin-left: 30px;  
+  padding: 15px;
+  border-radius: 10px;
+ 
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  
+  box-shadow: #3a4d82 0px 5px 10px;
+  background-image: linear-gradient(to right, #060e3ab8 30%, #05121761 70%);
+}
+.register-form input ,.register-form select {
+padding: 5PX;
+box-shadow: #3a4d82 0px 5px 10px;
+background-color: #122457;
+border: none;
+align-items: 1.2;
+color: white;
+height: 50px;
+border-radius: 10px;
+
+
+}
+.register-form input::placeholder {
+  color:rgba(255, 255, 255, 0.6);
+}
+
+.register-form input:focus,
+.register-form select:focus {
+  border-color: #1d4ed8;
+  box-shadow: 0 0 10px rgba(37, 99, 235, 0.25);
+}
+
+.register-form select option {
+  background-color: rgb(5, 3, 63);  
+  color: white;
+}
+
+.register-form .btn {
+  align-self:flex-start;
+  margin-top: 10px;
+
+}
+.contact-section{
+  width: 90%;
+  height: 300px;
+  position: relative;
+  color:white;
+  padding: 50px 0px 0px 0px;  
+  display: flex;
+gap: 200px;
+}
+
+  .contact-container{
+   width: 50%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+   
+  }
+  .contact-container h2{
+    font-size: 28px;
+    padding: 5px 50px 30px 30px;
+  }
+  .contact-container P{
+    font-size: 20px;
+    padding: 5px 0px 15px 20px;
+    
+  }
+  .contact-info{
+    width: 50%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+   
+  }
+  .contact-info P{
+    font-size: 18px;
+    padding: 5px 0px 15px 20px;
+    
+  }
+
+.footer {
+   width: 100%;
+  color: #ffffff;
+ text-align: center;
+ 
+}
+
+/* Social Media Row */
+
+.footer-social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 25px;
+}
+
+.social-icons {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.social-icons a {
+  color: #6140cfe8;
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  color: #ffffff;
+  transform: translateY(-3px);
+}
+
+/* Horizontal Lines */
+
+.footer-line {
+  height: 1px;
+  background-color: #ad98f1e8;
+  flex: 1;
+}
+
+/* Academy Name */
+
+.footer-logo {
+  font-size: 20px;
+  margin-bottom: 15px;
+  margin-left: 20px;
+  font-weight: 700;
+  
+  justify-self: center;
+}
+
+/* Copyright */
+
+.copyright {
+  font-size: 12px;
+  color: #999;
+  margin: 0;
 }
